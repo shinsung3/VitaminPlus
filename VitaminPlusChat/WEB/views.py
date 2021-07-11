@@ -3,7 +3,8 @@
 # # Create your views here.
 
 from django.http import HttpResponse
+from django.shortcuts import redirect, render
 
 
-def index(request):
-    return HttpResponse("Hello, world. You're WEB.")
+def index_home(request):
+    return render(request, 'frontend/index.html')
